@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("kisa i love you")
-	fmt.Print(3 * 3)
+	a := "aaa"
+
+	b := &a
+
+	name(b)
+
+}
+
+func name(n *int) {
+
+	fmt.Println(n)
 }
